@@ -187,7 +187,7 @@
   line-height: 95.7px;
   font-weight: 700;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--title-shadow-color-max);
+  text-shadow: 4px 4px 0 var(--title-shadow-color);
   justify-self: start;
 }
 
@@ -205,8 +205,10 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
 .theme_auto .title {
   text-shadow: 4px 4px 0 var(--title-shadow-color-max, rgba(255, 0, 112, 1));
+}
 }
 
 .title-decor {

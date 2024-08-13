@@ -55,6 +55,8 @@
     --title-color: rgba(255, 194, 230, 1);
     --heading-color: rgba(53, 52, 48, 1);
     --link-color: rgba(53, 52, 48, 1);
+    --title-shadow-color: rgba(255, 141, 203, 1);
+    --title-shadow-color-max: rgba(255, 0, 112, 1);
     background-image: url(../images/cover-image-light.png);
   }
 
@@ -65,4 +67,5 @@
   .theme_auto .rec_container {
     display: none;
   }
+
 }
