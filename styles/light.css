@@ -9,7 +9,8 @@
   --title-color: rgba(255, 194, 230, 1);
   --heading-color: rgba(53, 52, 48, 1);
   --link-color: rgba(53, 52, 48, 1);
-  --title-shadow-color: rgba(255, 0, 112, 1);
+  --title-shadow-color: rgba(255, 141, 203, 1);
+  --title-shadow-color-max: rgba(255, 0, 112, 1);
 }
 
 .page.theme_light {
@@ -26,6 +27,8 @@
   display: none;
 }
 
+
+
 .heading {
   color: var(--heading-color);
 }
@@ -33,6 +36,12 @@
 .content_link {
   color: var(--text-color);
   text-shadow: 1px 1px 0 var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    text-shadow: 4px 4px 0 var(--title-shadow-color-max);
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -47,6 +56,10 @@
     --heading-color: rgba(53, 52, 48, 1);
     --link-color: rgba(53, 52, 48, 1);
     background-image: url(../images/cover-image-light.png);
+  }
+
+  .theme_light .rec_container {
+    display: none;
   }
 
   .theme_auto .rec_container {
