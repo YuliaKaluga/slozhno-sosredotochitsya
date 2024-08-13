@@ -2,11 +2,11 @@
   --main-font: "IBM Plex mono";
   --bg-color: rgba(0, 0, 40, 1);
   --paragraph-color: rgba(0, 0, 40, 1);
-  --title-decor-color: rgba(0, 0, 40, 1);
   --text-color: rgba(241, 178, 206, 1);
   --button-color: rgba(255, 0, 112, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --accent-color-hover: rgba(255, 0, 112, 0.4);
   --title-color: rgba(219, 0, 255, 1);
   --heading-color: rgba(255, 0, 112, 1);
+  --title-shadow-color: rgba(255, 0, 112, 1);
 }

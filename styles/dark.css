@@ -8,6 +8,7 @@
   --accent-color-hover: rgba(255, 0, 112, 0.4);
   --title-color: rgba(219, 0, 255, 1);
   --heading-color: rgba(255, 0, 112, 1);
+  --title-shadow-color: rgba(255, 0, 112, 1);
 }
 
 .page.theme_dark {
@@ -184,7 +185,7 @@
   line-height: 95.7px;
   font-weight: 700;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--title-shadow-color);
   justify-self: start;
 }
 

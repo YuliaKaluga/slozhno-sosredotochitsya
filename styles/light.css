@@ -1,4 +1,4 @@
-:root .theme_light {
+:root .page.theme_light {
   --bg-color: rgba(255, 241, 247, 1);
   --paragraph-color: rgba(53, 52, 48, 1);
   --title-decor-color: rgba(53, 52, 48, 1);
@@ -9,6 +9,7 @@
   --title-color: rgba(255, 194, 230, 1);
   --heading-color: rgba(53, 52, 48, 1);
   --link-color: rgba(53, 52, 48, 1);
+  --title-shadow-color: rgba(255, 0, 112, 1);
 }
 
 .page.theme_light {
