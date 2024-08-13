@@ -1,5 +1,9 @@
 :root .theme_light {
+<<<<<<< HEAD
   --bg-color: rgba(255, 241, 247, 1);
+=======
+  --bg-color: rgba(255, 194, 230, 1);
+>>>>>>> b5777d78a8dff24e94cb481584c01374cfe8b220
   --paragraph-color: rgba(53, 52, 48, 1);
   --title-decor-color: rgba(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
@@ -13,9 +17,12 @@
 
 .page.theme_light {
   background-image: url(../images/cover-image-light.png);
+<<<<<<< HEAD
   background-size: auto 100vh;
   background-position: center;
   background-repeat: no-repeat;
+=======
+>>>>>>> b5777d78a8dff24e94cb481584c01374cfe8b220
   background-attachment: fixed;
   object-fit: cover;
   object-position: center;
@@ -26,17 +33,30 @@
 }
 
 .heading {
+<<<<<<< HEAD
   color: var(--heading-color);
 }
 
 .content_link {
   color: var(--text-color);
   text-shadow: 1px 1px 0 var(--accent-color);
+=======
+  color: var(--heading-color, rgba(53, 52, 48, 1));
+}
+
+.content_link {
+  color: var(--text-color, rgba(53, 52, 48, 1));
+  text-shadow: 1px 1px 0 var(--accent-color, rgba(255, 141, 203, 1));
+>>>>>>> b5777d78a8dff24e94cb481584c01374cfe8b220
 }
 
 @media (prefers-color-scheme: light) {
   .page {
+<<<<<<< HEAD
     --bg-color: rgba(255, 241, 247, 1);
+=======
+    --bg-color: rgba(255, 194, 230, 1);
+>>>>>>> b5777d78a8dff24e94cb481584c01374cfe8b220
     --paragraph-color: rgba(53, 52, 48, 1);
     --text-color: rgba(53, 52, 48, 1);
     --button-color: rgba(53, 52, 48, 1);
@@ -45,7 +65,17 @@
     --title-color: rgba(255, 194, 230, 1);
     --heading-color: rgba(53, 52, 48, 1);
     --link-color: rgba(53, 52, 48, 1);
+<<<<<<< HEAD
     background-image: url(../images/cover-image-light.png);
+=======
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+    background-attachment: fixed;
+    object-fit: cover;
+    object-position: center;
+>>>>>>> b5777d78a8dff24e94cb481584c01374cfe8b220
   }
 
   .theme_auto .rec_container {
