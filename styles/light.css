@@ -23,11 +23,15 @@
   object-position: center;
 }
 
-.theme_light .rec_container {
-  display: none;
+@media screen and (1024px <= height) {
+  .page.theme_light {
+    background-size: 100vw 100vh;
+  }
 }
 
-
+.theme_light .rec-container {
+  display: none;
+}
 
 .heading {
   color: var(--heading-color);
@@ -60,12 +64,11 @@
     background-image: url(../images/cover-image-light.png);
   }
 
-  .theme_light .rec_container {
+  .theme_light .rec-container {
     display: none;
   }
 
-  .theme_auto .rec_container {
+  .theme_auto .rec-container {
     display: none;
   }
-
 }

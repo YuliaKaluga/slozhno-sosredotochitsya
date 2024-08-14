@@ -41,5 +41,5 @@ a {
   line-height: inherit;
 }
 button:disabled {
-pointer-events: none;
+  pointer-events: none;
 }

@@ -30,6 +30,12 @@
   object-position: center;
 }
 
+@media screen and (1024px <= height) {
+  .page {
+    background-size: 100vw 100vh;
+  }
+}
+
 .header {
   padding: 10px;
   block-size: max(668px, 100vh);
@@ -92,7 +98,7 @@
   }
 }
 
-.rec_container {
+.rec-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -104,13 +110,13 @@
 }
 
 @media screen and (768px <= width <= 1440px) {
-  .rec_container {
+  .rec-container {
     top: 21px;
     right: 29px;
   }
 }
 
-.rec_container:before {
+.rec-container:before {
   content: "REC";
   position: relative;
   color: var(--accent-color);
@@ -118,7 +124,7 @@
   letter-spacing: 1.2px;
 }
 
-.rec_container:after {
+.rec-container:after {
   content: "";
   position: relative;
   width: 9px;
@@ -184,7 +190,7 @@
 .title {
   font-family: var(--main-font, sans-serif);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 95.7px;
+  line-height: 6rem;
   font-weight: 700;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--title-shadow-color);
@@ -194,21 +200,21 @@
 @media screen and (min-width: 768px) {
   .title {
     margin-inline-start: -20px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 99px;
-  }
-}
-
-@media screen and (1024px <= width <= 1440px) {
-  .title {
-    line-height: 129.53px;
+    font-size: 15.6vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
-.theme_auto .title {
-  text-shadow: 4px 4px 0 var(--title-shadow-color-max, rgba(255, 0, 112, 1));
+  .title {
+    line-height: 8rem;
+    font-size: min(15.33vw, 157px);
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .theme_auto .title {
+    text-shadow: 4px 4px 0 var(--title-shadow-color-max, rgba(255, 0, 112, 1));
+  }
 }
 
 .title-decor {
@@ -220,19 +226,19 @@
   line-height: 23.4px;
 }
 
-.header_paragraph {
+.header__paragraph {
   color: var(--paragraph-color);
   justify-self: end;
 }
 
 @media screen and (375px < width <= 768px) {
-  .header_paragraph {
+  .header__paragraph {
     inline-size: max(50%, 364px);
   }
 }
 
 @media screen and (768px < width) {
-  .header_paragraph {
+  .header__paragraph {
     inline-size: min(50%, 491px);
   }
 }
@@ -260,21 +266,19 @@
   line-height: 23.4px;
 }
 
-.why_container {
+.description_container {
   display: grid;
   gap: 20px;
 }
 
 @media screen and (768px <= width) {
-  .why_container {
-    display: grid;
+  .description_container {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 }
 
 @media screen and (768px < width) {
-  .why_container {
+  .description_container {
     gap: 10px;
   }
 }
@@ -326,9 +330,7 @@
 
 @media screen and (min-width: 1024px) {
   .reason-container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 }
 
@@ -413,7 +415,6 @@
 @media screen and (min-width: 768px) {
   .be_in_focus {
     padding: 20px;
-    display: grid;
   }
 }
 
