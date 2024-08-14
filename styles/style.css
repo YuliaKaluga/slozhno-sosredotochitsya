@@ -10,12 +10,6 @@
   object-position: center;
 }
 
-@media screen and (1024px <= height) {
-  .page {
-    background-size: 100vw 100vh;
-  }
-}
-
 .header {
   padding: 10px;
   block-size: max(668px, 100vh);
